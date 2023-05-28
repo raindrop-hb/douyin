@@ -5,6 +5,8 @@
     <img alt="PHP" src="https://img.shields.io/badge/code-Python-success"/></a>
     <a href="https://jq.qq.com/?_wv=1027&k=fzhZMSbP"><img alt="QQ群" src="https://img.shields.io/badge/QQ-交流群-blackviolet"/></a>
 </p>
+
+
 通过解析官方网站，每天自动检测博主的更新动态，并将作品信息和无水印链接push到微信,自动上传至百度网盘。
 
 一个账号平均耗时为3分钟左右。放在服务器运行不需要人工干预，支持无服务器的云函数部署，每天自动push相关信息。
@@ -22,7 +24,7 @@
 - [x] 无水印视频上传至百度网盘
 - [x] 自动识别验证码
 - [x] 生成视频数据表格
-- [ ] 自定义博主主页链接
+- [x] 自定义博主主页链接
 
 如有其他好的建议请提交issues
 
@@ -72,18 +74,16 @@ python 3.6
 
 | 设置项 |  内容  |说明|
 | -------- | ----- |----- |
-| push | 0为关闭推送，1为企业微信推送|必填|
-|corpid|企业ID|非必填|
-|secret|应用的凭证密钥|非必填|
-|agentid|应用id|非必填|
-|cookie|抖音pc登录时的cookie|非必填|
-|user_url|监控的博主主页|非必填|
-|check_url|仅云函数有，末尾不要加/|云函数必填|
-||||
-|pan_s|上传网盘开关，为0时下面设置失效，为1时开启|必填|
+|cookie|抖音pc登录时的cookie|必填|
+|url|填写你要监控的博主填写你要监控的博主|必填|
+|check_url|末尾不要加/|必填|
+|pan_s|上传网盘开关 True或False|必填|
 |baidupan_url|百度网盘链接|非必填|
 |baidupan_cookie|百度网盘cookie|非必填|
-|baidupan_file|下载文件夹名|非必填|
+|check_url|验证码识别|必填|
+
+
+
 
 ### 抓取抖音cookie
 ![image](https://user-images.githubusercontent.com/72308008/227768965-298d07e7-d75f-4861-8e7a-dc313484a90b.png)
