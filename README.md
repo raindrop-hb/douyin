@@ -43,34 +43,27 @@ python 3.6
 | PHP/delete.php | 释放内存|若不想/不会搭建，可以在check_url填http://dy.hanbao16.top|
 | ddddocr | 验证码识别 |青龙和云函数需要使用识别接口，不想/不会搭建可以在code_url填http://code.hanbao16.top/url|
 
-## 华为函数工作流 部署
+## 青龙面板部署方法
+![image](https://github.com/raindrop-hb/douyin/assets/72308008/dcb33eeb-03d9-48c2-993e-bcb23548aaae)
 
-![image](https://user-images.githubusercontent.com/72308008/229360945-c35c5cca-88bb-4c70-95a7-cda7cc409f7c.png)
+### 一、Fork 此仓库
 
+### 二、上传青龙面板
 
+新版青龙直接订阅git@github.com:raindrop-hb/mimotion.git
 
-使用文件夹yun，华为云函数工作流需要购买obs才能写入，所以将数据存在服务器上，将write.php,check.php,download.php,delete.php上传
+### 三、安装模块
 
-### 操作方法
+包括requests、re、urllib.parse、json、os、csv
 
-1.事件函数
+### 四、填写config.json
 
-2.运行时：python3.6
+配置文件都有说明，自己看就行。
 
-3.代码复制上去
+check_url是视频转储，需要上传download.php和delete.php，实在不行可以用我的；http://dy.hanbao16.top;
 
-4.设置-
-函数执行入口：index.main_handler
+code_url是验证码识别接口，使用flask框架，需要上传code文件，实在不行可以用我的；http://code.hanbao16.top/url。
 
-5.触发器-创建触发器-定时触发器-cron表达式：0 0 18 * * ? 每天18点执行，可以自行修改
-
-6.将write.php,check.php，download.php，delete.php上传到你自己的服务器上用于存储数据，在index.py设置里填入你的域名
-
-## 服务器端操作方法
-
-### 本地/服务器 部署
-
-使用local
 
 ### 设置项
 
@@ -101,8 +94,3 @@ python 3.6
 pc登录百度网盘后，先按F12，再离线下载链接https://user-images.githubusercontent.com/72308008/229359685-fc4b0538-481b-4a11-917c-c6f60af5910c.png
 ，找到上图数据，请求url即为baidupan_url，下滑找到cookie，即为baidupan_cookie
 
-=======
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb53b19d88f30e9647412c586321717c6188c7c43bc3504991b0f8f016a30a0f
-size 3618
->>>>>>> b716b7e (代码重构)
