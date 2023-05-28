@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 抖音自动解析并推送微信，上传云盘(粉丝神器)
 
 <p align="center">
@@ -9,7 +8,8 @@
 通过解析官方网站，每天自动检测博主的更新动态，并将作品信息和无水印链接push到微信,自动上传至百度网盘。
 
 一个账号平均耗时为3分钟左右。放在服务器运行不需要人工干预，支持无服务器的云函数部署，每天自动push相关信息。
-![CYL{$KRQB{ IN7R$B@FQ}HB_tmb](https://user-images.githubusercontent.com/72308008/229981180-30792afd-e8a3-4a8e-86fe-0c034bb1660d.png)
+![MGKOZYKFC51%%FK7_`D(QZX_tmb](https://github.com/raindrop-hb/douyin/assets/72308008/dbff64ea-192c-449e-add6-8b12041c89dc)
+
 
 
 
@@ -20,6 +20,8 @@
 - [x] 自动执行
 - [x] 推送到微信
 - [x] 无水印视频上传至百度网盘
+- [x] 自动识别验证码
+- [x] 生成视频数据表格
 - [x] 自定义博主主页链接
 
 如有其他好的建议请提交issues
