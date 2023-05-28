@@ -1,0 +1,55 @@
+{
+  /* 开源地址: https://github.com/raindrop-hb/douyin */
+  "version": "1.08",
+  /* 填写抖音完整cookie */
+  "cookie":"",
+  /* 填写你要监控的博主，可以d多个url */
+  "url":[
+    "https://v.douyin.com/DtwVjBm/","https://v.douyin.com/DtK8DtN/","https://v.douyin.com/Dtcy1Mx/"
+  ],
+  /* 你的域名 */
+  "check_url":"http://dy.hanbao16.top",
+  /* 打印日志，False为静默模式 */
+  "logs":"True",
+  "upload": {
+    "baidu_pan": {
+      /* 开关 */
+      "pan_s":"False",
+      "baidupan_url":"",
+      /* 完整cookie */
+      "baidupan_cookie":",
+      /* 验证码识别,不填则本地识别 */
+      "code_url": "http://code.hanbao16.top/url"
+    }
+  },
+  /* debug模式，正常情况下勿开 */
+  "debug":"False",
+  "push": {
+    "WeCom": {
+      /* 是否企业微信推送 */
+      "push" : "False",
+      /* 企业ID */
+      "corpid" : "ww0fc7",
+      /* 应用的凭证密钥 */
+      "secret" : "pYSFPL03-GJM8sop6FPpc",
+      /* 应用id */
+      "agentid" : "10000"
+    },
+    "Ding": {
+      /* 是否钉钉推送 */
+      "push" : "False",
+      /* 应用凭证 */
+      "appkey" : "dingoqwopidc",
+      /* 应用凭证 */
+      "appsecret" : "UptFE0xc4nSyNBNEfj3TlLDo3JpgcVWN-",
+      /* 钉钉app-部门群-设置-机器人-webhook */
+      "webhook":"https://oapi.dingtalk.com/robot/send?access_token=78c8b773c0796732273b1a65a63"
+    },
+    "pushplus": {
+      /* 是否pushplus推送 */
+      "push" : "False",
+      /* 应用凭证 */
+      "token" : "dingoqwop"
+    }
+  }
+}
