@@ -40,7 +40,7 @@ python 3.6
 | logs.py | 输出日志 |无|
 | codes.py | 本地验证码识别 |无|
 | PHP/download.php | 临时下载 |无|
-| PHP/delete.php | 释放内存 |无|
+| PHP/delete.php | |
 | ddddocr | 验证码识别 |青龙和云函数需要使用识别接口|
 
 ## 华为函数工作流 部署
