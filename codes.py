@@ -7,13 +7,17 @@
 # @File    : demo.py
 try:
     import ddddocr
+except:
+    pass
 
 
-    def main(code_dir):
+def main(code_dir):
+    try:
         ocr = ddddocr.DdddOcr()
         with open(code_dir, 'rb') as f:
             image = f.read()
         res = ocr.classification(image)
         return res
-except:
-    pass
+    except:
+        print('脚本目录下无ddddocr文件')
+        exit()
