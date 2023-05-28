@@ -39,9 +39,9 @@ python 3.6
 | push.py | 消息推送 |无|
 | logs.py | 输出日志 |无|
 | codes.py | 本地验证码识别 |无|
-| PHP/download.php | 临时下载 |无|
-| PHP/delete.php | |
-| ddddocr | 验证码识别 |青龙和云函数需要使用识别接口|
+| PHP/download.php | 临时下载 |若不想/不会搭建，可以在check_url填http://dy.hanbao16.top|
+| PHP/delete.php | 释放内存|若不想/不会搭建，可以在check_url填http://dy.hanbao16.top|
+| ddddocr | 验证码识别 |青龙和云函数需要使用识别接口，不想/不会搭建可以在code_url填http://code.hanbao16.top/url|
 
 ## 华为函数工作流 部署
 
